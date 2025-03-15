@@ -19,7 +19,7 @@ func TestGetAPIKey(t *testing.T) {
 				"Authorization": []string{"ApiKey my-api-key"},
 			},
 			expectedKey:   "my-api-key",
-			expectedError: ErrNoAuthHeaderIncluded,
+			expectedError: nil,
 		},
 		{
 			name:    "No Authorization Header",
